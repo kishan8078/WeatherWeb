@@ -20,27 +20,6 @@ function WeatherApp(){
         setCityName(event.target.value);
     }
 
-    
-    
-    
-
-    // useEffect(() => {
-        
-    //     setLoading(l=> l= true)
-    //     console.log("Loading S" , loading)
-    //         // const TimeId = setTimeout(() => {
-    //         //     console.log("start" , loading)
-                
-    //         // } , 2000)
-            
-            
-            
-            
-        
-    //         setLoading(l=> l= false)
-    //         console.log("Loading E" , loading)
-    // } , [city])
-
     function handleSubmit() {
         if(cityName === ""){
             alert("Please Enter City Name ")
@@ -142,19 +121,10 @@ function WeatherApp(){
     setLoading(false)
     }
 
-    
-    // useEffect(() => {
-        
-    // } , [loading])
-    
-
-
     return(
         <div className="w-container">
             <div className="search">
                 <input className="input-text" type="text" placeholder="eg:City Country" value={cityName} onChange={(event) = handleCityName}/>
-                {/* <input className="input-btn" type="button" onClick={handleSubmit} value="Search"/> */}
-                {/* {loading ? "Loading..." : "Loaded"} */}
                 <button className="input-btn" onClick={handleSubmit}>Search
                 </button>
             </div>
@@ -203,10 +173,3 @@ function WeatherApp(){
 }
 
 export default WeatherApp
-
-
-//Geoapify key = 879675cd79ef4bdcb2207ee4f2353a49
-//Geoapify URL = https://api.geoapify.com/v1/geocode/search?text={CITY name}&format=json&apiKey=879675cd79ef4bdcb2207ee4f2353a49
-
-//OpenWeather key = dda2d8d17595fe515e1ef38bcaeb4c9f
-//OpenWeather URL = https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
