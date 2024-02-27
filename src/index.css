@@ -11,6 +11,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header{
     background-color: #14012b;
@@ -61,7 +64,7 @@ li:hover::after{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    width: 60vw;
     background: linear-gradient(to bottom,#5acdfe9a, #00012e);
     
     box-shadow: 0px 2px 5px 1px rgb(76, 76, 76);
@@ -70,7 +73,7 @@ li:hover::after{
 }
 .comp-container{
     height: 100%;
-    width: 100%;
+    width: 90%;
     
 }
 @media (max-width:500px) {
